@@ -1,0 +1,4 @@
+lightlist
+=========
+
+A lightweight contactlist
