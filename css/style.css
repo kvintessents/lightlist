@@ -1,0 +1,128 @@
+.false {
+    display:        none;
+}
+
+h1.logo {
+    text-indent:    -40000px;
+    background:     url("../images/logo.png") no-repeat left top;
+    width:          430px;
+    height:         114px;
+    margin:         10px auto 0 auto;
+}
+h2 {
+    margin-top:     0px;
+}
+.box {
+    box-shadow:     0px 2px 3px rgba(0,0,0,0.2);
+    padding:        20px;
+    min-height:     155px;
+}
+.contact-list li {
+    transition:     0.2s;
+    -webkit-transition: 0.2s;
+}
+.contact-list li:hover {
+    cursor:         pointer;
+    background:     #fbfbfb;
+    padding-left:   18px;
+
+}
+.back-button span {
+    margin-right:   5px;
+}
+.glyphicon {
+    top:            2px;
+    color:          #666;
+}
+h2 .label {
+    font-size:      0.5em;
+    vertical-align: middle;
+}
+.avatar {
+    float:          right;
+    width:          120px;
+    height:         120px;
+}
+
+.view-container {
+    padding:        0 20px;
+}
+.view-inner-container {
+    position:       relative;
+}
+.single-view {
+    position:       absolute;
+    left:           0;
+    top:            0;
+    width:          100%;
+    opacity:        1;
+    background:     #fff;
+}
+
+.single-view.ng-enter {
+    opacity:        0;
+    left:           1%;
+
+    -webkit-transition: 0.2s ease-out all;
+    transition:         0.2s ease-out all;
+}
+.single-view.ng-leave {
+    opacity:            1;
+    -webkit-transition: 0.2s ease-out all;
+    transition:         0.2s ease-out all;
+}
+.single-view.ng-leave.ng-leave-active {
+    opacity:            0;
+}
+.single-view.ng-enter.ng-enter-active {
+    opacity:            1;
+    left:               0%;
+}
+
+.list-group {
+    overflow:           hidden;
+}
+.list-group-item {
+    position:           relative;
+    background:         #fff;
+    z-index:            2;
+}
+.list-group-item.ng-enter {
+    opacity:            0;
+    margin-top:         -42px;
+    z-index:            1;
+
+    -webkit-transition: 0.2s ease-in all;
+    transition:         0.2s ease-in all;
+}
+.list-group-item.ng-enter.ng-enter-active {
+    opacity:            1;
+    margin-top:         0px;
+}
+.list-group-item.ng-leave {
+    opacity:            1;
+    margin-top:         0px;
+    z-index:            1;
+
+    -webkit-transition: 0.2s ease-out all;
+    transition:         0.2s ease-out all;
+}
+.list-group-item.ng-leave.ng-leave-active {
+    opacity:            0;
+    margin-top:         -42px;
+}
+
+@media only screen and (max-width: 480px) {
+    h1.logo {
+        background:     url("../images/logo_small.png") no-repeat left top;
+        width:          200px;
+        height:         57px;
+        margin:         5px auto 0 auto;
+    }
+    h2 {
+        font-size:      1.5em;
+    }
+    .box {
+        padding:        5px 8px;
+    }
+}

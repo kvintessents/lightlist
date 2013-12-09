@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="lightlist">
+<head>
+    <title>Lightlist</title>
+    <script src="javascript/angularjs/angular.min.js"></script>
+    <script src="javascript/angularjs/angular-route.js"></script>
+    <script src="javascript/angularjs/angular-animate.js"></script>
+    <script src="javascript/angularjs/angular-local-storage.js"></script>
+
+    <script src="javascript/cloneFn.js"></script>
+    <script src="javascript/app.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1 class="logo">Lightlist</h1>
+        </header>
+        <div class="view-container row">
+            <div class="view-inner-container">
+                <ng-view class="single-view"></ng-view>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
