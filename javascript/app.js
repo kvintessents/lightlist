@@ -143,7 +143,8 @@
       if ($scope.orderBy = orderBy) {
         return $scope.reverse = !$scope.reverse;
       } else {
-        return $scope.orderBy = orderBy;
+        $scope.orderBy = orderBy;
+        return $scope.reverse = false;
       }
     };
   });

@@ -118,6 +118,7 @@ lightlist.controller "HomeController",  ( $scope, ContactListService ) ->
             $scope.reverse = !$scope.reverse
         else
             $scope.orderBy = orderBy
+            $scope.reverse = false
 
     return
 
