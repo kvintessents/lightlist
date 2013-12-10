@@ -2,7 +2,14 @@
 <p><input type="text" placeholder="Search for contact" ng-model="contactFilter" class="form-control" /></p>
 
 <ul ng-controller="ListController" class="list-group contact-list">
-    <li ng-repeat="contact in CLS.contacts | filter:contactFilter | orderBy:'displayName'" ng-click="openContact( contact.id )" class="list-group-item">
-        <strong>{{ contact.displayName }}</strong> {{ contact.phone }}
+    <li
+        ng-repeat="contact in CLS.contacts | filter:contactFilter | orderBy:'displayName'"
+        ng-click="openContact( contact.id )"
+        class="list-group-item">
+
+        <strong>{{ contact.displayName }}</strong>
+        {{ contact.phone }}
+        <span class="label label-primary {{ GS.getName( contact.group ) }}">{{ GS.getName( contact.group ) }}</span>
+    
     </li>
 </ul>

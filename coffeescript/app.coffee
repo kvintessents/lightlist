@@ -112,8 +112,10 @@ lightlist.controller "HomeController",  ( $scope, ContactListService ) ->
 
     return
 
-lightlist.controller "ListController", ( $scope, $location, ContactListService ) ->
+lightlist.controller "ListController", ( $scope, $location, ContactListService, GroupService ) ->
     $scope.CLS = ContactListService
+    $scope.GS = GroupService
+    
     ContactListService.restore()
 
     # // Some test data

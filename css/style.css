@@ -27,6 +27,9 @@ h2 {
     padding-left:   18px;
 
 }
+.contact-list .label {
+    float:          right;
+}
 .back-button span {
     margin-right:   5px;
 }

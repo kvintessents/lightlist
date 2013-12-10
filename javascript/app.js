@@ -139,8 +139,9 @@
     ContactListService.restore();
   });
 
-  lightlist.controller("ListController", function($scope, $location, ContactListService) {
+  lightlist.controller("ListController", function($scope, $location, ContactListService, GroupService) {
     $scope.CLS = ContactListService;
+    $scope.GS = GroupService;
     ContactListService.restore();
     if ($scope.CLS.contacts.length === 0) {
       ContactListService.add({
