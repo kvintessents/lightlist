@@ -17,6 +17,12 @@ h2 {
     padding:        20px;
     min-height:     155px;
 }
+.sort-buttons {
+    
+}
+.sort-group {
+    float:          right;
+}
 .contact-list li {
     transition:     0.2s;
     -webkit-transition: 0.2s;

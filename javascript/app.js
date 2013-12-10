@@ -137,6 +137,15 @@
   lightlist.controller("HomeController", function($scope, ContactListService) {
     $scope.CLS = ContactListService;
     ContactListService.restore();
+    $scope.orderBy = 'displayName';
+    $scope.reverse = false;
+    $scope.toggleSort = function(orderBy) {
+      if ($scope.orderBy = orderBy) {
+        return $scope.reverse = !$scope.reverse;
+      } else {
+        return $scope.orderBy = orderBy;
+      }
+    };
   });
 
   lightlist.controller("ListController", function($scope, $location, ContactListService, GroupService) {

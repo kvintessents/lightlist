@@ -110,12 +110,21 @@ lightlist.controller "HomeController",  ( $scope, ContactListService ) ->
     $scope.CLS = ContactListService
     ContactListService.restore()
 
+    $scope.orderBy = 'displayName'
+    $scope.reverse = false
+
+    $scope.toggleSort = ( orderBy ) ->
+        if $scope.orderBy = orderBy
+            $scope.reverse = !$scope.reverse
+        else
+            $scope.orderBy = orderBy
+
     return
 
 lightlist.controller "ListController", ( $scope, $location, ContactListService, GroupService ) ->
     $scope.CLS = ContactListService
     $scope.GS = GroupService
-    
+
     ContactListService.restore()
 
     # // Some test data
